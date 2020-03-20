@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { ProfileImage } from './profile-image'
 import { Background } from './background';
-import imageUrl from '../../assets/profile.jpg'
+import bannerImageUrl from '../../assets/banner.jpg'
+import profileImageUrl from '../../assets/profile.jpg'
 import { headerHeight } from 'styleguide/breakpoints'
 
 const StyledHeader = styled.header`
@@ -13,7 +14,7 @@ const StyledHeader = styled.header`
 export const Header = () =>
   (
     <StyledHeader>
-      <Background imageUrl={imageUrl} />
-      <ProfileImage imageUrl={imageUrl} />
+      <Background imageUrl={bannerImageUrl} />
+      <ProfileImage imageUrl={profileImageUrl} />
     </StyledHeader>
   )
